@@ -1,0 +1,38 @@
+# 忽略 Python 編譯生成的文件
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 忽略 Java 編譯生成的文件
+*.class
+# 包含類文件的目錄
+bin/
+# 包管理器生成的目錄（如 Maven）
+target/
+
+# 通用忽略規則（日誌文件、編輯器配置等）
+*.log
+*.tmp
+*.temp
+*.swp
+*~
+*.DS_Store
+
+# 忽略 config 目錄（配置文件）
+/config/
