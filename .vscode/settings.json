@@ -1,0 +1,53 @@
+{
+    // 字體和界面顯示相關設定
+    "editor.fontSize": 12,          // 設定編輯器的字體大小為 12px
+    "editor.fontFamily": "Monaco",  // 設定編輯器使用 Monaco 字體
+    "editor.wordWrap": "on",        // 啟用自動換行
+
+    // 代碼編寫和格式化相關設定
+    "editor.formatOnSave": false,           // 在保存文件時不自動格式化代碼
+    "files.trimTrailingWhitespace": true,   // 保存文件時自動刪除行尾的空白字符
+    "editor.parameterHints.enabled": true,  // 啟用函數參數提示
+
+    // 文件保存和自動保存相關設定
+    "files.autoSave": "afterDelay",     // 設定文件在一定延遲後自動保存
+    "files.autoSaveDelay": 1000,        // 設定自動保存的延遲時間為 1000 毫秒
+
+    // 文件和編輯器行為相關設定
+    "files.encoding": "utf8",               // 設定文件編碼為 UTF-8
+    "editor.renderLineHighlight": "all",    // 高亮顯示當前行和對應的行號
+
+    // 版本控制相關設定
+    "git.autofetch": true,      // 啟用 Git 自動 fetch 功能，定期自動獲取遠程倉庫的最新改動
+
+    // 進階代碼輔助設定
+    "path-intellisense.extensionOnImport": true,    // 啟用導入時的路徑智能提示擴展
+    "editor.tabCompletion": "on",                   // 啟用 Tab 完成，提高代碼編寫效率
+    "javascript.suggest.autoImports": true,         // 自動導入建議的 JavaScript/TypeScript 符號
+    "typescript.suggest.autoImports": true,         // 對 TypeScript 啟用自動導入建議
+
+    // 額外的進階代碼輔助設定
+    "editor.bracketPairColorization.enabled": true,     // 啟用括號配對的彩色高亮功能
+
+    // Python 配置
+    "python.analysis.autoImportCompletions": true,      // 啟用自動導入建議
+    "python.terminal.activateEnvironment": true,        // 啟用啟動 Python 環境的終端
+
+    // 指定額外的 Python 模組搜索路徑
+    "python.analysis.extraPaths": [
+        "path",
+    ],
+
+    // Python 語言特定設定
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,                   // 在差異編輯器中忽略尾部空格
+        "editor.formatOnType": true,                                // 啟用在鍵入時進行格式化
+        "editor.wordBasedSuggestions": "off",                       // 關閉基於單詞的建議
+        "editor.defaultFormatter": "ms-python.black-formatter",     // 預設格式化程序
+        "editor.formatOnSave": true,                                // 啟用保存時進行格式化
+    },
+
+    // Python 分析和類型檢查
+    "python.analysis.typeCheckingMode": "basic",        // 選擇 Python 代碼類型檢查模式
+    "python.analysis.completeFunctionParens": true,     // 啟用在函數名後自動添加括號
+}
