@@ -1,6 +1,7 @@
 # Git 基本介紹
 ### 1. 版本控制系統 (如遊戲存檔功能)
 ### 2. 共同開發 (提供中央的 Repository)
+<br>
 
 # Git 基本常用指令
 ### 1. Git Init 用於初始化一個新的 Git Repository
