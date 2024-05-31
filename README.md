@@ -1,7 +1,7 @@
 # Git 基本介紹
 ### 1. 版本控制系統 (如遊戲存檔功能)
 ### 2. 共同開發 (提供中央的 Repository)
----
+<br>
 
 # Git 基本常用指令
 ### 1. Git Init 用於初始化一個新的 Git Repository
@@ -105,11 +105,11 @@ $ git branch -r
 # 查看所有分支, 包括本地分支和遠端分支
 $ git branch -a
 ```
----
+<br>
 
 # GitHub 基本介紹
 ### 1. 遠端 Hosting, 進行開發 (如 Google Drive、OneDrive)
----
+<br>
 
 # Git 與 GitHub 連接常用指令
 ### 1. Git Remote 用於管理遠端儲存庫的連接
@@ -189,7 +189,7 @@ $ git submodule deinit -f -- [子模組路徑]
 $ git rm -f [子模組路徑]
 $ rm -rf .git/modules/[子模組路徑]
 ```
----
+<br>
 
 # Git Conflict 衝突
 ### 1. 衝突原因
@@ -207,7 +207,7 @@ $ rm -rf .git/modules/[子模組路徑]
 ### 4. 避免衝突的最佳方法
 1. "定期" 從遠端儲存庫拉取 "更新", 保持本地儲存庫與遠端 "同步"
 2. 在推送更改之前, 先從遠端儲存庫拉取最新的更改並在本地進行合併
----
+<br><br>
 
 # .gitignore 文件的使用
 ### 1. 使用原因
@@ -248,7 +248,7 @@ $ git add .gitignore
 # 提交 .gitignore 文件
 $ git commit -m "Add .gitignore"
 ```
----
+<br>
 
 # Git Large File Storage (LFS) 的使用
 ### 1. 使用原因
@@ -273,4 +273,4 @@ $ git lfs track "path/to/largefile.extension"
 ### 4. 其他操作指令：
 1. 除了初始化和選擇要跟蹤的大型文件外, 其他 Git 操作指令<br/>(如 git add、git commit、git pull、git push 等) 的使用方式和正常的 Git 操作相同
 2. Git LFS 會自動處理大型文件的上傳和下載, 能夠像平常一樣進行版本控制和協作
----
+<br>
