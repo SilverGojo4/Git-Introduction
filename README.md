@@ -129,7 +129,7 @@ $ git remote rename [遠端儲存庫舊名稱] [遠端儲存庫新名稱]
 $ git remote remove [遠端儲存庫名稱]
 ```
 
-### 2. Git Push 用於將本地 Repository 的提交推送到<br>遠端 Repository, 便團隊協作和版本控制
+### 2. Git Push 用於將本地 Repository 的提交推送到遠端 Repository, 便團隊協作和版本控制
 
 ```zsh
 # 創建新的遠端分支並推送本地分支的更改 (遠端分支不存在)
