@@ -164,7 +164,7 @@ $ git clone [遠端儲存庫URL]
 $ git clone -b [分支名稱] [遠端儲存庫URL]
 ```
 
-### 5. Git Submodule 用於在一個 Git 儲存庫中包含另一個 Git 儲存庫, 適用於依賴於其他專案的情況
+### 5. Git Submodule 用於在 Git 儲存庫中包含另一個 Git 儲存庫, 用於依賴於其他專案
 ```zsh
 # 添加一個新的子模組到指定路徑
 $ git submodule add [子模組儲存庫URL] [本地路徑]
@@ -192,7 +192,7 @@ $ rm -rf .git/modules/[子模組路徑]
 
 # Git Conflict 衝突
 ### 1. 衝突原因
-1. 當兩個或以上的開發者同時修改了同一檔案的同一部分, 並且某一方已將更改推送到遠端 Repository 時, 其他人在推送時就會遇到衝突
+1. 當兩個或以上的開發者同時修改了同一檔案的同一部分, 並且某一方已將更改推送到遠端 Repository 時, <br>其他人在推送時就會遇到衝突
 2. 在合併分支 (如將特定分支合併到主分支) 時, 如果有重疊的更改, 也會發生衝突
 
 ### 2. 衝突的識別
@@ -252,7 +252,7 @@ $ git commit -m "Add .gitignore"
 # Git Large File Storage (LFS) 的使用
 ### 1. 使用原因
 1. Git Large File Storage (LFS) 是一個用於處理 "大型二進制文件" 的工具, 可以使 Git 更有效地處理這些文件
-2. 當 Git 儲存庫需要跟蹤和管理大型文件, 如圖像、視頻、模型文件等, 使用 Git LFS 可以幫助減少 Repository 大小, 提高性能, 並確保項目的版本控制流暢運作
+2. 當 Git 儲存庫需要跟蹤和管理大型文件, 如圖像、視頻、模型文件等, 使用 Git LFS 可以幫助減少 Repository 大小, <br>進而提高性能, 並確保項目的版本控制流暢運作
 
 ### 2. 初始化 Git LFS
 ```zsh
@@ -270,6 +270,6 @@ $ git lfs track "path/to/largefile.extension"
 ```
 
 ### 4. 其他操作指令：
-1. 除了初始化和選擇要跟蹤的大型文件外, 其他 Git 操作指令 (如 git add、git commit、git pull、git push 等) 的使用方式和正常的 Git 操作相同
+1. 除了初始化和選擇要跟蹤的大型文件外, 其他 Git 操作指令 (如 git add、git commit、git pull、git push 等) <br>使用方式和正常的 Git 操作相同
 2. Git LFS 會自動處理大型文件的上傳和下載, 能夠像平常一樣進行版本控制和協作
 <br>
